@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todolist on local storage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <form  id="todoForm">
+                    <div class="form-group">
+                        <label for="todoitem">todoitem</label>
+                        <input type="text" required class="form-control" id="todoitem">
+                    </div>
+                    <button type="submit" class="btn btn-sm btn-block btn-outline-warning" id="AddBtn">Add Todo</button>
+                    <button type="button" class="btn btn-sm btn-block btn-outline-warning d-none" id="updateBtn"> update Todo</button>
+                </form>
+            </div>
+            <div class="col-md-6" >
+                <div class="alert alert-info d-none" id="info">the todoitem is not available !!!</div>
+                <div id="todoContainer">
+
+                </div>
+                <!-- <ul class="list-group">
+                    <li class="list-group-item">html</li>
+                </ul> -->
+                <span>
+                
+                </span>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
